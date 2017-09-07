@@ -1,0 +1,13 @@
+<h1> Testing </h1>
+<ul>
+<% @teams.each do|team| %>
+ <li> <%= team.name %> </li>
+
+ <ul>
+  <% team.users.each do|user| %>
+  <li> <%= user.name %> </li>
+  <li> <img src= '<%=user.avatar%>' width="50"> </li>
+  <% end %>
+</ul>
+<% end %>
+</ul>
